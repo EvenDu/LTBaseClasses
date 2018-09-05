@@ -1,0 +1,6 @@
+framework module LTCategories {
+  umbrella header "LTCategories-umbrella.h"
+
+  export *
+  module * { export * }
+}

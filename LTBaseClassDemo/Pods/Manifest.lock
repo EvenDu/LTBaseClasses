@@ -1,0 +1,30 @@
+PODS:
+  - IQKeyboardManager (6.1.1)
+  - LTCategories (0.0.2)
+  - Reachability (3.2)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+
+DEPENDENCIES:
+  - IQKeyboardManager
+  - LTCategories
+  - Reachability
+  - YYCategories
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - IQKeyboardManager
+    - LTCategories
+    - Reachability
+    - YYCategories
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
+  LTCategories: e53a9f5f5abb080063e8c9bc1639e590c52e6e7b
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+
+PODFILE CHECKSUM: 4222bcf6de4bf9ce652cf3545fbdc0b2e16c711b
+
+COCOAPODS: 1.5.3

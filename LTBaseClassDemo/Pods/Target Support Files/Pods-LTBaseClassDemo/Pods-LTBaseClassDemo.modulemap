@@ -1,0 +1,6 @@
+framework module Pods_LTBaseClassDemo {
+  umbrella header "Pods-LTBaseClassDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
