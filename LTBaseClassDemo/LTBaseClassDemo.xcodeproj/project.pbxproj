@@ -27,6 +27,7 @@
 		2C2A3964213FC2DD00E7FE74 /* LTNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A3947213FC2DD00E7FE74 /* LTNavigationBar.m */; };
 		2C2A3965213FC2DD00E7FE74 /* WeakScriptMessageDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A3951213FC2DD00E7FE74 /* WeakScriptMessageDelegate.m */; };
 		2C2A3966213FC2DD00E7FE74 /* LTHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A3952213FC2DD00E7FE74 /* LTHelper.m */; };
+		2C2A396C213FD0D100E7FE74 /* LTBaseClasses.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C2A396B213FD0D100E7FE74 /* LTBaseClasses.bundle */; };
 		2CCD275E213F7E57002750A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCD275D213F7E57002750A0 /* AppDelegate.m */; };
 		2CCD2761213F7E57002750A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCD2760213F7E57002750A0 /* ViewController.m */; };
 		2CCD2764213F7E57002750A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CCD2762213F7E57002750A0 /* Main.storyboard */; };
@@ -79,6 +80,7 @@
 		2C2A3950213FC2DD00E7FE74 /* HFSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFSingleton.h; sourceTree = "<group>"; };
 		2C2A3951213FC2DD00E7FE74 /* WeakScriptMessageDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakScriptMessageDelegate.m; sourceTree = "<group>"; };
 		2C2A3952213FC2DD00E7FE74 /* LTHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTHelper.m; sourceTree = "<group>"; };
+		2C2A396B213FD0D100E7FE74 /* LTBaseClasses.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LTBaseClasses.bundle; sourceTree = "<group>"; };
 		2CCD2759213F7E57002750A0 /* LTBaseClassDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTBaseClassDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCD275C213F7E57002750A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2CCD275D213F7E57002750A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				2C2A3941213FC2DD00E7FE74 /* LTBaseClassMacro.h */,
+				2C2A396A213FD0D100E7FE74 /* LTResources */,
 				2C2A3925213FC2DD00E7FE74 /* BaseControllers */,
 				2C2A393A213FC2DD00E7FE74 /* BaseModels */,
 				2C2A3942213FC2DD00E7FE74 /* BaseViews */,
@@ -186,6 +189,14 @@
 				2C2A3952213FC2DD00E7FE74 /* LTHelper.m */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		2C2A396A213FD0D100E7FE74 /* LTResources */ = {
+			isa = PBXGroup;
+			children = (
+				2C2A396B213FD0D100E7FE74 /* LTBaseClasses.bundle */,
+			);
+			path = LTResources;
 			sourceTree = "<group>";
 		};
 		2CCD2750213F7E57002750A0 = {
@@ -300,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CCD2769213F7E58002750A0 /* LaunchScreen.storyboard in Resources */,
+				2C2A396C213FD0D100E7FE74 /* LTBaseClasses.bundle in Resources */,
 				2CCD2766213F7E58002750A0 /* Assets.xcassets in Resources */,
 				2CCD2764213F7E57002750A0 /* Main.storyboard in Resources */,
 			);

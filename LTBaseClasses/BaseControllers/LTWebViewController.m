@@ -429,7 +429,7 @@
     {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         
-        [btn setImage:[UIImage imageNamed:@"navigationButtonReturnClick"] forState:UIControlStateHighlighted];
+        [btn setImage:[UIImage imageNamed:@"LTBaseClasses/navigationButtonReturnClick.png"] forState:UIControlStateHighlighted];
         
         btn.lt_size = CGSizeMake(34, 44);
         

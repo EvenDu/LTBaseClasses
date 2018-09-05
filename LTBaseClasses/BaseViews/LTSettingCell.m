@@ -54,7 +54,7 @@ static NSString *const ID = @"LTSettingCell";
     _lineView.backgroundColor = LTGrayColor(243);
     [self.contentView addSubview:_lineView];
     
-    _arrowImgV = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"me_setting_cell_arrow"]];
+    _arrowImgV = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"LTBaseClasses/setting_cell_arrow.png"]];
     self.accessoryView = _arrowImgV;
 
 //    [_arrowImgV mas_makeConstraints:^(MASConstraintMaker *make) {

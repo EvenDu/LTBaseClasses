@@ -7,7 +7,6 @@
 //
 
 #import "LTWordItem.h"
-#import "UIFont+LTAdd.h"
 
 @implementation LTWordItem
 
@@ -33,8 +32,8 @@
         _subTitleColor = [UIColor blackColor];
         
         _cellHeight = 50;
-        _titleFont = [UIFont LTFontOfSize:16];
-        _subTitleFont = [UIFont LTFontOfSize:16];
+        _titleFont = [UIFont systemFontOfSize:16];
+        _subTitleFont = [UIFont systemFontOfSize:16];
         
     }
     
