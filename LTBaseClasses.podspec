@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.author             = { "洪峰" => "hongfengkt@gmail.com" }
   s.source       = { :git => "https://github.com/hongfenglt/LTBaseClasses.git", :tag => "#{s.version}" }
-  # s.source_files = 'LTBaseClasses/', 'LTBaseClasses/*.h'
+  s.source_files = 'LTBaseClasses/', 'LTBaseClasses/*/*.{h,m}'
 
   s.dependency "LTCategories"
   s.dependency "YYCategories"
@@ -20,26 +20,29 @@ Pod::Spec.new do |s|
   s.dependency "Reachability"
 
 
-  s.subspec 'BaseControllers' do |ss|
-       ss.source_files = 'LTBaseClasses/BaseControllers/*.{h,m}'
-       ss.public_header_files = 'LTBaseClasses/BaseControllers/*.h'
-  end
+  # s.subspec 'BaseControllers' do |ss|
+  #      ss.source_files = 'LTBaseClasses/BaseControllers/*.{h,m}'
+  #      ss.public_header_files = 'LTBaseClasses/BaseControllers/*.h'
+  #      ss.dependency "LTBaseClasses/BaseViews"
+  #      ss.dependency "LTBaseClasses/Helper"
+  # end
 
-  s.subspec 'BaseViews' do |ss|
-       ss.source_files = 'LTBaseClasses/BaseViews/*.{h,m}'
-       ss.public_header_files = 'LTBaseClasses/BaseViews/*.h'
-  end
+  # s.subspec 'BaseViews' do |ss|
+  #      ss.source_files = 'LTBaseClasses/BaseViews/*.{h,m}'
+  #      ss.public_header_files = 'LTBaseClasses/BaseViews/*.h'
+  #      ss.dependency "LTBaseClasses/Helper"
+  # end
 
 
-  s.subspec 'BaseModels' do |ss|
-       ss.source_files = 'LTBaseClasses/BaseModels/*.{h,m}'
-       ss.public_header_files = 'LTBaseClasses/BaseModels/*.h'
-  end
+  # s.subspec 'BaseModels' do |ss|
+  #      ss.source_files = 'LTBaseClasses/BaseModels/*.{h,m}'
+  #      ss.public_header_files = 'LTBaseClasses/BaseModels/*.h'
+  # end
 
-  s.subspec 'Helper' do |ss|
-    ss.source_files = 'LTBaseClasses/Helper/*.{h,m}'
-    ss.public_header_files = 'LTBaseClasses/Helper/*.h'
-  end
+  # s.subspec 'Helper' do |ss|
+  #   ss.source_files = 'LTBaseClasses/Helper/*.{h,m}'
+  #   ss.public_header_files = 'LTBaseClasses/Helper/*.h'
+  # end
 
   s.subspec 'LTResources' do |ss|
     ss.resource = 'LTBaseClasses/LTResources/*.bundle'
