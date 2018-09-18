@@ -3,7 +3,6 @@
 Pod::Spec.new do |s|
 
   #
-
   s.name         = "LTBaseClasses"
   s.version      = "0.0.2"
   s.summary      = "LTBaseClass"
@@ -13,7 +12,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.author             = { "洪峰" => "hongfengkt@gmail.com" }
   s.source       = { :git => "https://github.com/hongfenglt/LTBaseClasses.git", :tag => "#{s.version}" }
-  s.source_files = 'LTBaseClasses/', 'LTBaseClasses/.h}'
+  # s.source_files = 'LTBaseClasses/', 'LTBaseClasses/*.h'
 
   s.dependency "LTCategories"
   s.dependency "YYCategories"
@@ -22,14 +21,13 @@ Pod::Spec.new do |s|
 
 
   s.subspec 'BaseControllers' do |ss|
-       ss.source_files = 'LTBaseClasses/ViewController/*.{h,m}'
-       ss.public_header_files = 'LTBaseClasses/ViewController/*.h'
-       ss.dependency 'LTBaseClasses/BaseViews'
+       ss.source_files = 'LTBaseClasses/BaseControllers/*.{h,m}'
+       ss.public_header_files = 'LTBaseClasses/BaseControllers/*.h'
   end
 
   s.subspec 'BaseViews' do |ss|
-       ss.source_files = 'LTBaseClasses/View/*.{h,m}'
-       ss.public_header_files = 'LTBaseClasses/View/*.h'
+       ss.source_files = 'LTBaseClasses/BaseViews/*.{h,m}'
+       ss.public_header_files = 'LTBaseClasses/BaseViews/*.h'
   end
 
 

@@ -64,7 +64,6 @@
 		2C2A393E213FC2DD00E7FE74 /* LTWordArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTWordArrowItem.h; sourceTree = "<group>"; };
 		2C2A393F213FC2DD00E7FE74 /* LTItemSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTItemSection.m; sourceTree = "<group>"; };
 		2C2A3940213FC2DD00E7FE74 /* LTWordItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTWordItem.m; sourceTree = "<group>"; };
-		2C2A3941213FC2DD00E7FE74 /* LTBaseClassMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTBaseClassMacro.h; sourceTree = "<group>"; };
 		2C2A3943213FC2DD00E7FE74 /* LTElementsFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTElementsFlowLayout.m; sourceTree = "<group>"; };
 		2C2A3944213FC2DD00E7FE74 /* LTHorizontalFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTHorizontalFlowLayout.m; sourceTree = "<group>"; };
 		2C2A3945213FC2DD00E7FE74 /* LTSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTSettingCell.m; sourceTree = "<group>"; };
@@ -81,6 +80,7 @@
 		2C2A3951213FC2DD00E7FE74 /* WeakScriptMessageDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakScriptMessageDelegate.m; sourceTree = "<group>"; };
 		2C2A3952213FC2DD00E7FE74 /* LTHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTHelper.m; sourceTree = "<group>"; };
 		2C2A396B213FD0D100E7FE74 /* LTBaseClasses.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LTBaseClasses.bundle; sourceTree = "<group>"; };
+		2C358E7B2150E2D400136F74 /* LTBaseClassMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTBaseClassMacro.h; sourceTree = "<group>"; };
 		2CCD2759213F7E57002750A0 /* LTBaseClassDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTBaseClassDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCD275C213F7E57002750A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2CCD275D213F7E57002750A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,7 +111,6 @@
 		2C2A3924213FC2DD00E7FE74 /* LTBaseClasses */ = {
 			isa = PBXGroup;
 			children = (
-				2C2A3941213FC2DD00E7FE74 /* LTBaseClassMacro.h */,
 				2C2A396A213FD0D100E7FE74 /* LTResources */,
 				2C2A3925213FC2DD00E7FE74 /* BaseControllers */,
 				2C2A393A213FC2DD00E7FE74 /* BaseModels */,
@@ -182,6 +181,7 @@
 		2C2A394D213FC2DD00E7FE74 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				2C358E7B2150E2D400136F74 /* LTBaseClassMacro.h */,
 				2C2A3950213FC2DD00E7FE74 /* HFSingleton.h */,
 				2C2A394E213FC2DD00E7FE74 /* LTHelper.h */,
 				2C2A3952213FC2DD00E7FE74 /* LTHelper.m */,
