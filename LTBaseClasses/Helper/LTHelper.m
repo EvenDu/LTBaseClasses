@@ -6,34 +6,45 @@
 //
 
 #import "LTHelper.h"
-#import "sys/utsname.h"
+
+static inline BOOL isIPhoneXSeries() {
+    BOOL iPhoneXSeries = NO;
+    if (UIDevice.currentDevice.userInterfaceIdiom != UIUserInterfaceIdiomPhone) {
+        return iPhoneXSeries;
+    }
+    
+    if (@available(iOS 11.0, *)) {
+        UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
+        NSLog(@"safeAreaInsets:%f", mainWindow.safeAreaInsets.bottom);
+        if (mainWindow.safeAreaInsets.bottom > 0.0) {
+            iPhoneXSeries = YES;
+        }
+    }
+    
+    return iPhoneXSeries;
+}
 
 @implementation LTHelper
 
 + (BOOL)isIphoneX {
-    struct utsname systemInfo;
-    uname(&systemInfo);
-    NSString *platform = [NSString stringWithCString:systemInfo.machine encoding:NSASCIIStringEncoding];
-    if ([platform isEqualToString:@"i386"] || [platform isEqualToString:@"x86_64"]) {
-        // judgment by height when in simulators
-        return (CGSizeEqualToSize([UIScreen mainScreen].bounds.size, CGSizeMake(375, 812)) ||
-                CGSizeEqualToSize([UIScreen mainScreen].bounds.size, CGSizeMake(812, 375)));
-    }
-    BOOL isIPhoneX = [platform isEqualToString:@"iPhone10,3"] || [platform isEqualToString:@"iPhone10,6"];
-    return isIPhoneX;
+    return isIPhoneXSeries();
 }
 + (CGFloat)navBarBottom {
     return [[UIApplication sharedApplication] statusBarFrame].size.height + 44;
 }
 + (CGFloat)tabBarHeight {
-    return [self isIphoneX] ? 83 : 49;
+    return [self safebottom] + 49;
 }
 
 + (CGFloat)statusBarHeigth {
-    return [[UIApplication sharedApplication] statusBarFrame].size.height;//[self isIphoneX] ? 49 : 20;
+    return [[UIApplication sharedApplication] statusBarFrame].size.height;
 }
 + (CGFloat)safebottom {
-    return [self isIphoneX] ? 34 : 0;
+    if (@available(iOS 11.0, *)) {
+        return [[[UIApplication sharedApplication] delegate] window].safeAreaInsets.bottom;
+    } else {
+        return 0;
+    }
 }
 
 @end

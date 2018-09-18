@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LTBaseClasses"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "LTBaseClass"
   s.description  = "iOS Project Base Classes For Objective-C"
   s.homepage     = "https://github.com/hongfenglt/LTBaseClasses"
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.author             = { "洪峰" => "hongfengkt@gmail.com" }
   s.source       = { :git => "https://github.com/hongfenglt/LTBaseClasses.git", :tag => "#{s.version}" }
-  s.source_files = 'LTBaseClasses/', 'LTBaseClasses/**/*.{h,m}'
+  s.source_files = 'LTBaseClasses/', 'LTBaseClasses/.h}'
 
   s.dependency "LTCategories"
   s.dependency "YYCategories"
@@ -21,23 +21,27 @@ Pod::Spec.new do |s|
   s.dependency "Reachability"
 
 
-  # s.subspec 'BaseControllers' do |ss|
-  #      ss.source_files = 'LTBaseClasses/ViewController/*.{h,m}'
-  #      ss.dependency 'LTBaseClasses/BaseViews'
-  # end
+  s.subspec 'BaseControllers' do |ss|
+       ss.source_files = 'LTBaseClasses/ViewController/*.{h,m}'
+       ss.public_header_files = 'LTBaseClasses/ViewController/*.h'
+       ss.dependency 'LTBaseClasses/BaseViews'
+  end
 
-  # s.subspec 'BaseViews' do |ss|
-  #      ss.source_files = 'LTBaseClasses/View/*.{h,m}'
-  # end
+  s.subspec 'BaseViews' do |ss|
+       ss.source_files = 'LTBaseClasses/View/*.{h,m}'
+       ss.public_header_files = 'LTBaseClasses/View/*.h'
+  end
 
 
-  # s.subspec 'BaseModels' do |ss|
-  #   ss.source_files = 'LTBaseClasses/BaseModels/*.{h,m}'
-  # end
+  s.subspec 'BaseModels' do |ss|
+       ss.source_files = 'LTBaseClasses/BaseModels/*.{h,m}'
+       ss.public_header_files = 'LTBaseClasses/BaseModels/*.h'
+  end
 
-  # s.subspec 'Helper' do |ss|
-  #   ss.source_files = 'LTBaseClasses/Helper/*.{h,m}'
-  # end
+  s.subspec 'Helper' do |ss|
+    ss.source_files = 'LTBaseClasses/Helper/*.{h,m}'
+    ss.public_header_files = 'LTBaseClasses/Helper/*.h'
+  end
 
   s.subspec 'LTResources' do |ss|
     ss.resource = 'LTBaseClasses/LTResources/*.bundle'

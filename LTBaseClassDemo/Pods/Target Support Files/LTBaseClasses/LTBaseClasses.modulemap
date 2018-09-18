@@ -1,0 +1,6 @@
+framework module LTBaseClasses {
+  umbrella header "LTBaseClasses-umbrella.h"
+
+  export *
+  module * { export * }
+}

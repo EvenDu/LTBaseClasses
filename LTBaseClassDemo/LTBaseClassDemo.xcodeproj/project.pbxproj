@@ -182,11 +182,11 @@
 		2C2A394D213FC2DD00E7FE74 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				2C2A394E213FC2DD00E7FE74 /* LTHelper.h */,
-				2C2A394F213FC2DD00E7FE74 /* WeakScriptMessageDelegate.h */,
 				2C2A3950213FC2DD00E7FE74 /* HFSingleton.h */,
-				2C2A3951213FC2DD00E7FE74 /* WeakScriptMessageDelegate.m */,
+				2C2A394E213FC2DD00E7FE74 /* LTHelper.h */,
 				2C2A3952213FC2DD00E7FE74 /* LTHelper.m */,
+				2C2A394F213FC2DD00E7FE74 /* WeakScriptMessageDelegate.h */,
+				2C2A3951213FC2DD00E7FE74 /* WeakScriptMessageDelegate.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -369,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2A3964213FC2DD00E7FE74 /* LTNavigationBar.m in Sources */,
 				2C2A395D213FC2DD00E7FE74 /* LTWordArrowItem.m in Sources */,
 				2C2A3963213FC2DD00E7FE74 /* LTVerticalFlowLayout.m in Sources */,
 				2C2A3960213FC2DD00E7FE74 /* LTElementsFlowLayout.m in Sources */,
@@ -376,7 +377,6 @@
 				2C2A395F213FC2DD00E7FE74 /* LTWordItem.m in Sources */,
 				2C2A3966213FC2DD00E7FE74 /* LTHelper.m in Sources */,
 				2C2A3954213FC2DD00E7FE74 /* LTTextViewController.m in Sources */,
-				2C2A3964213FC2DD00E7FE74 /* LTNavigationBar.m in Sources */,
 				2C2A3961213FC2DD00E7FE74 /* LTHorizontalFlowLayout.m in Sources */,
 				2C2A395A213FC2DD00E7FE74 /* LTCollectionViewController.m in Sources */,
 				2CCD2761213F7E57002750A0 /* ViewController.m in Sources */,
@@ -472,6 +472,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				WARNING_CFLAGS = "";
 			};
 			name = Debug;
 		};
@@ -524,6 +525,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				WARNING_CFLAGS = "";
 			};
 			name = Release;
 		};
