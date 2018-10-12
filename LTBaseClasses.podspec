@@ -20,24 +20,24 @@ Pod::Spec.new do |s|
   s.dependency "Reachability"
 
 
+  s.subspec 'Helper' do |h|
+    h.source_files = 'LTBaseClasses/Helper/**/*.{h,m}'
+  end
+
+  s.subspec 'BaseViews' do |v|
+       v.source_files = 'LTBaseClasses/BaseViews/**/*.{h,m}'
+       v.dependency "LTBaseClasses/Helper"
+       v.dependency "LTBaseClasses/BaseModels"
+  end
+
   s.subspec 'BaseControllers' do |c|
-       c.source_files = 'LTBaseClasses/BaseControllers/*/*.{h,m}'
+       c.source_files = 'LTBaseClasses/BaseControllers/**/*.{h,m}'
        c.dependency "LTBaseClasses/BaseViews"
        c.dependency "LTBaseClasses/Helper"
   end
 
-  s.subspec 'BaseViews' do |v|
-       v.source_files = 'LTBaseClasses/BaseViews/*/*.{h,m}'
-       v.dependency "LTBaseClasses/Helper"
-  end
-
-
   s.subspec 'BaseModels' do |m|
-       m.source_files = 'LTBaseClasses/BaseModels/*/*.{h,m}'
-  end
-
-  s.subspec 'Helper' do |h|
-    h.source_files = 'LTBaseClasses/Helper/*/*.{h,m}'
+       m.source_files = 'LTBaseClasses/BaseModels/**/*.{h,m}'
   end
 
   s.subspec 'LTResources' do |ss|

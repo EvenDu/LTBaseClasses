@@ -10,7 +10,7 @@
 #import "LTWordItem.h"
 #import "LTWordArrowItem.h"
 #import "LTItemSection.h"
-#import "UIView+LTFrame.h"
+#import "UIView+LTcd Frame.h"
 #import "LTBaseClassMacro.h"
 
 @implementation LTSettingCell {
