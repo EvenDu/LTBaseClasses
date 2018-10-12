@@ -15,7 +15,7 @@ static inline BOOL isIPhoneXSeries() {
     
     if (@available(iOS 11.0, *)) {
         UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
-        NSLog(@"safeAreaInsets:%f", mainWindow.safeAreaInsets.bottom);
+//        NSLog(@"safeAreaInsets:%f", mainWindow.safeAreaInsets.bottom);
         if (mainWindow.safeAreaInsets.bottom > 0.0) {
             iPhoneXSeries = YES;
         }
