@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
   #
   s.name         = "LTBaseClasses"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "LTBaseClass"
   s.description  = "iOS Project Base Classes For Objective-C"
   s.homepage     = "https://github.com/hongfenglt/LTBaseClasses"

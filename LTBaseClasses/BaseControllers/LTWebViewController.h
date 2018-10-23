@@ -45,6 +45,13 @@
 /** <#digest#> */
 @property (nonatomic, copy) NSString *gotoURL;
 
+/** <#digest#> */
+@property (strong, nonatomic) UIButton *backBtn;
+
+/** <#digest#> */
+@property (strong, nonatomic) UIButton *closeBtn;
+
+
 
 // 7页面加载完调用, 必须调用super
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation NS_REQUIRES_SUPER;
