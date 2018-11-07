@@ -15,15 +15,6 @@
 
 @interface LTWebViewController ()
 
-/** <#digest#> */
-@property (weak, nonatomic) UIProgressView *progressView;
-
-/** <#digest#> */
-@property (strong, nonatomic) UIButton *backBtn;
-
-/** <#digest#> */
-@property (strong, nonatomic) UIButton *closeBtn;
-
 
 @end
 

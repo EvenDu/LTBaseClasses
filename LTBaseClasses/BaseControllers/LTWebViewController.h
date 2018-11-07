@@ -51,6 +51,9 @@
 /** <#digest#> */
 @property (strong, nonatomic) UIButton *closeBtn;
 
+/** <#digest#> */
+@property (weak, nonatomic) UIProgressView *progressView;
+
 
 
 // 7页面加载完调用, 必须调用super
