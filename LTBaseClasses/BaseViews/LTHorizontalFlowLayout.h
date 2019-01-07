@@ -17,11 +17,11 @@
 /**
  *  要求实现
  *
- *  @param waterflowLayout 哪个布局需要代理返回高度
- *  @param  indexPath          对应的cell, 的indexPath, 但是indexPath.section == 0
+ *  @param waterflowLayout      哪个布局需要代理返回宽度
+ *  @param  indexPath           对应的cell, 的indexPath, 但是indexPath.section == 0
  *  @param itemHeight           layout内部计算的高度
  *
- *  @return 需要代理高度对应的cell的高度
+ *  @return 需要代理高度对应的cell的宽度
  */
 - (CGFloat)waterflowLayout:(LTHorizontalFlowLayout *)waterflowLayout collectionView:(UICollectionView *)collectionView widthForItemAtIndexPath:(NSIndexPath *)indexPath itemHeight:(CGFloat)itemHeight;
 @optional

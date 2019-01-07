@@ -55,10 +55,8 @@
         
         [self.webView addObserverBlockForKeyPath:LTKeyPath(self.webView, title) block:^(id  _Nonnull obj, id  _Nullable oldVal, id  _Nullable newVal) {
             
-            if ([newVal isKindOfClass:[NSString class]]) {
-                
+            if (!LTIsEmpty(newVal) && [newVal isKindOfClass:[NSString class]] && [weakself webViewController:weakself webViewIsNeedAutoTitle:weakself.webView]) {
                 weakself.title = newVal;
-                
             }
             
         }];
