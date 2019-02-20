@@ -40,7 +40,7 @@ push_git_tags
 # 4. pod spec lint
 # pod_lib_lint(allow_warnings: true)
 #    pod repo push XXXX xxx.podspec
-pod_push(path: "#{targetName}.podspec", repo: "master", allow_warnings: true)
+pod_push(path: "#{targetName}.podspec", allow_warnings: true, use_libraries: true)
 
 
 end
